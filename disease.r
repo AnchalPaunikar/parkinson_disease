@@ -27,6 +27,7 @@ spread = ggplot(disease, aes(x= spread1, y = spread2, color = factor(status)))+
 dfa1 = ggplot(disease, aes(x = DFA), color = factor(status))+geom_density(); dfa1
 
 #SPITTING THE DATA SET INTO TRAIN AND TEST SET
+set.seed(123)
 s = sample(1:nrow(disease), 0.8 * nrow(disease))
 train = disease[s,]
 test = disease[-s,]
