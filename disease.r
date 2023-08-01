@@ -4,7 +4,6 @@ library(car)
 library(pROC)
 library(randomForest)
 library(ggplot2)
-setwd("C:/Users/ASUS/OneDrive/Desktop/Edvancer R/R/projectdb/fake news")
 
 #IMPORTING DATA INTO R
 disease = read.csv("Parkinsson disease.csv")
