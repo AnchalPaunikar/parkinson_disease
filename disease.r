@@ -18,8 +18,6 @@ disease = disease %>% select(-name)
 sum(is.na(disease))
 
 
-
-
 vocal_fundamental= ggplot(disease, aes(x=MDVP.Fo.Hz., y =MDVP.Fhi.Hz., color = factor(status))) +
   geom_point();vocal_fundamental
 
@@ -69,7 +67,7 @@ auc(roc(test$status, val.pred))
 
 
 
-#Liner regression with step() function
+#Liner regression with step() function-------------------------------------
 
 linear1 = lm(status ~.-Shimmer.DDA-Jitter.DDP  , data = train)
 summary(linear1)
